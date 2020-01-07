@@ -16,7 +16,8 @@ github_repo: aknysh/t2
 
 usage: |-
 
-  ### Test
+  ### Test README
+
 contributors:
   - name: "Andriy Knysh"
     github: "aknysh"
