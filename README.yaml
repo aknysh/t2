@@ -16,7 +16,9 @@ github_repo: aknysh/t2
 
 usage: |-
 
-  ### Test README
+  ### Test
+
+  Rebuild README
 
 contributors:
   - name: "Andriy Knysh"
