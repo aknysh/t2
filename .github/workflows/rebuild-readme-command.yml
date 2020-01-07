@@ -30,9 +30,6 @@ jobs:
 
       # Commit changes to the PR branch
       - name: Commit changes to the PR branch
-        shell: bash
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
           git config --global user.name 'actions-bot'
           git config --global user.email '58130806+actions-bot@users.noreply.github.com'
