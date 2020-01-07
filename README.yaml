@@ -1,7 +1,7 @@
 name: t2
 
 description: |-
-  Test.
+  Test
 
 introduction: |-
   Test
@@ -16,7 +16,7 @@ github_repo: aknysh/t2
 
 usage: |-
 
-  ### Test
+  ### Test 6
 
   Rebuild README
 
