@@ -19,5 +19,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           reaction-token: ${{ secrets.GITHUB_TOKEN }}
           commands: rebuild-readme
-          permission: none
+          permission: write
           issue-type: pull-request
