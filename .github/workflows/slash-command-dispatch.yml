@@ -18,6 +18,33 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           reaction-token: ${{ secrets.GITHUB_TOKEN }}
-          commands: rebuild-readme
-          permission: none
-          issue-type: pull-request
+          config: >
+            [
+              {
+                "command": "hello-world",
+                "permission": "none",
+                "issue_type": "pull-request",
+                "repository": "peter-evans/slash-command-dispatch-processor",
+                "event_type_suffix": "-pr-command"
+              }
+            ]
+
+#name: Slash Command Dispatch
+#on:
+#  issue_comment:
+#    types: [created]
+#
+#jobs:
+#  slashCommandDispatch:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - name: Slash Command Dispatch
+#        uses: cloudposse/actions/github/slash-command-dispatch@0.8.0
+#        with:
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          reaction-token: ${{ secrets.GITHUB_TOKEN }}
+#          commands: rebuild-readme
+#          permission: none
+#          issue-type: pull-request
