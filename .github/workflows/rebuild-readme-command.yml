@@ -1,4 +1,4 @@
-name: rebuild-readme-command
+name: Rebuild README
 on:
   repository_dispatch:
     types: [rebuild-readme-command]
