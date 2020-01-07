@@ -1,0 +1,22 @@
+name: t2
+
+description: |-
+  Test.
+
+introduction: |-
+  Test
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: aknysh/t2
+
+# Badges to display
+
+usage: |-
+
+  ### Test
+contributors:
+  - name: "Andriy Knysh"
+    github: "aknysh"
