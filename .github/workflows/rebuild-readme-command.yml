@@ -23,7 +23,7 @@ jobs:
           git commit -am "README has been rebuit"
           git push
 
-      - name: Add reaction
+      - name: Add reactions to the original comment
         uses: peter-evans/create-or-update-comment@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
