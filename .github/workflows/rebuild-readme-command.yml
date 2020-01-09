@@ -59,6 +59,34 @@ jobs:
       #          else
       #            echo "No changes detected."
       #          fi
+      #      - name: Commit changes to the PR branch
+      #        run: |
+      #          git config --global user.name 'actions-bot'
+      #          git config --global user.email '58130806+actions-bot@users.noreply.github.com'
+      #          git add -A
+      #          git commit -m "Updated README.md"
+      #          git push
+
+
+      # Commit changes (if any) to the PR branch
+      #      - name: Commit changes to the PR branch
+      #        run: |
+      #          set -x
+      #          git diff --exit-code
+      #
+      #          if [ $? -ne 0 ]; then
+      #            echo "Changes detected."
+      #            git config user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+      #            git config user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      #
+      #            git remote set-url origin "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${{ github.event.client_payload.pull_request.head.repo.full_name }}.git"
+      #            git remote -v
+      #            git add .
+      #            git commit -m "Updated README.md"
+      #            git push origin HEAD:${{ github.event.client_payload.pull_request.head.ref }}
+      #          else
+      #            echo "No changes detected."
+      #          fi
 
       # Add reaction to the original comment
       - name: Add reaction to the original comment
