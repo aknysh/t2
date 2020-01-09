@@ -4,7 +4,7 @@ description: |-
   Test
 
 introduction: |-
-  Test11
+  Test22
 
 # License of this project
 license: "APACHE2"
@@ -16,7 +16,7 @@ github_repo: aknysh/t2
 
 usage: |-
 
-  ### Test 11
+  ### Test
 
   Rebuild README
 
