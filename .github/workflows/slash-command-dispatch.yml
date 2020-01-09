@@ -11,7 +11,6 @@ jobs:
   slashCommandDispatch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
 
       - name: Slash Command Dispatch
         uses: cloudposse/actions/github/slash-command-dispatch@0.9.0
