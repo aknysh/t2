@@ -23,7 +23,7 @@ jobs:
           make readme
 
       # Commit changes (if any) to the PR branch
-      - uses: cloudposse/actions/github/git-push@0.9.0
+      - uses: cloudposse/actions/github/git-push@update-git-push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.event.client_payload.pull_request.head.repo.full_name }}
