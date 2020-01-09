@@ -30,7 +30,8 @@ jobs:
           GITHUB_HEAD_REF: ${{ github.event.client_payload.pull_request.head.ref }}
           GIT_COMMIT_MESSAGE: "Updated README.md"
 
-      - name: Add reactions to the original comment
+      # Add reaction to the original comment
+      - name: Add reaction to the original comment
         uses: cloudposse/actions/github/create-or-update-comment@0.9.0
         with:
           token: ${{ secrets.GITHUB_REPO_TOKEN }}
