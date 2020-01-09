@@ -43,6 +43,7 @@ jobs:
       # Commit changes (if any) to the PR branch
       - name: Commit changes to the PR branch
         run: |
+          set -x
           git diff --exit-code
 
           if [ $? -ne 0 ]; then
