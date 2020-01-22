@@ -7,5 +7,5 @@ module "dynamodb_label" {
   name        = var.name
   delimiter   = var.delimiter
   attributes  = var.attributes
-  tags        =   var.tags
+  tags        = var.tags
 }
