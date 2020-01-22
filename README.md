@@ -59,6 +59,8 @@ This project is part of our comprehensive ["SweetOps"](https://cpco.io/sweetops)
 [<img align="right" title="Share on Twitter" src="https://docs.cloudposse.com/images/ionicons/social-twitter-outline-2.0.1-16x16-999999.svg" />][share_twitter]
 
 
+[![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
+
 
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
@@ -69,6 +71,8 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 
 
+We literally have [*hundreds of terraform modules*][terraform_modules] that are Open Source and well-maintained. Check them out! 
+
 
 
 
@@ -76,10 +80,13 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Introduction
 
-Test22
+Test18
 
 ## Usage
 
+
+**IMPORTANT:** The `master` branch is used in `source` just as an example. In your code, do not pin to `master` because there may be breaking changes between releases.
+Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest releases](https://github.com/aknysh/t2/releases).
 
 
 
