@@ -13,7 +13,7 @@ variable "environment" {
 variable "stage" {
   type        = string
   default     = ""
-  description =    "Stage, e.g. 'prod', 'staging', 'dev', OR 'source', 'build', 'test', 'deploy', 'release'"
+  description = "Stage, e.g. 'prod', 'staging', 'dev', OR 'source', 'build', 'test', 'deploy', 'release'"
 }
 
 variable "name" {
@@ -30,7 +30,7 @@ variable "enabled" {
 
 variable "delimiter" {
   type        = string
-  default     =   "-"
+  default     = "-"
   description = "Delimiter to be used between `namespace`, `environment`, `stage`, `name` and `attributes`"
 }
 
