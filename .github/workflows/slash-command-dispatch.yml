@@ -19,6 +19,6 @@ jobs:
           token: ${{ secrets.GITHUB_BOT_TOKEN }}
           reaction-token: ${{ secrets.GITHUB_TOKEN }}
           repository: aknysh/t3
-          commands: rebuild-readme, terraform-fmt, assign-labels, assign-reviewers, first-interaction-greet
+          commands: rebuild-readme, terraform-fmt, assign-labels, assign-reviewers, greet-contributor
           permission: none
           issue-type: pull-request
