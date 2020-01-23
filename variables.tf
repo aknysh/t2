@@ -7,7 +7,7 @@ variable "namespace" {
 variable "environment" {
   type        = string
   default     = ""
-  description = "Environment, e.g. 'prod', 'staging', 'dev', 'pre-prod', 'UAT'"
+  description =    "Environment, e.g. 'prod', 'staging', 'dev', 'pre-prod', 'UAT'"
 }
 
 variable "stage" {

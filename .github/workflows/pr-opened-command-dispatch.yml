@@ -1,0 +1,21 @@
+name: Pull Request Opened Command Dispatch
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+
+jobs:
+  pullRequestOpenedCommandDispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pull Request Opened Command Dispatch
+        uses: cloudposse/actions/github/repository-dispatch@0.11.0
+        with:
+          token: ${{ secrets.GITHUB_BOT_TOKEN }}
+          repository: aknysh/t3
+          event-type: pr-opened-command
+          client-payload: '{"github": ${{ toJson(github) }}}'
