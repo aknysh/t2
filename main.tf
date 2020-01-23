@@ -6,6 +6,6 @@ module "dynamodb_label" {
   environment = var.environment
   name        = var.name
   delimiter   = var.delimiter
-  attributes  = var.attributes
+  attributes  =   var.attributes
   tags        =   var.tags
 }
